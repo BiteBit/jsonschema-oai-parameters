@@ -1,10 +1,10 @@
 
 # Simple Useage
-jsonSchemaToParameters(type, schema)
+## jsonSchemaToParameters(type, schema)
 * type allow in: query,path,body,formData,header
 * schema standard or convenient jsonschema
 
-# Standard JsonSchema to OpenApi parameters
+### Standard JsonSchema to OpenApi parameters
 ```js
 const standard = {
   required: [
@@ -47,7 +47,7 @@ jsonSchemaToParameters('query', standard)
 
 ```
 
-# Convenient JsonSchema to OpenApi parameters
+### Convenient JsonSchema to OpenApi parameters
 ```js
 const convenient = {
   name: {
@@ -81,3 +81,11 @@ jsonSchemaToParameters('query', convenient)
   }
 ]
 ```
+
+## parametersToJsonSchema(parameters)
+* `result` `{object}`
+  * `header` `{object}` header JSON-Schema
+  * `query` `{object}` query JSON-Schema
+  * `body` `{object}` body JSON-Schema
+  * `path` `{object}` path JSON-Schema
+  * `formdata` `{object}` formdata JSON-Schema
