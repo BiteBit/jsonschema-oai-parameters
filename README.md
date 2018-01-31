@@ -82,10 +82,13 @@ jsonSchemaToParameters('query', convenient)
 ]
 ```
 
-## parametersToJsonSchema(parameters)
+## parametersToJsonSchema(parameters, options)
 * `result` `{object}`
   * `header` `{object}` header JSON-Schema
   * `query` `{object}` query JSON-Schema
   * `body` `{object}` body JSON-Schema
   * `path` `{object}` path JSON-Schema
   * `formdata` `{object}` formdata JSON-Schema
+
+* `options` `{object}`
+  * `lowercaseHeader` `{boolean}` default `false`
